@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>登录 - 民小资源网</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f7f7f7;
+        font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    .login-container h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .login-container button {
+        width: 100%;
+        padding: 10px;
+        background: #48DECC;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .login-container button:hover {
+        background: #87CEFA;
+    }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+    <h1>登录</h1>
+    <form action="login.php">
+        <input type="text" placeholder="姓名" required>
+	<input type="text" placeholder="用户名" required>
+	<input type="text" placeholder="手机号码" required>
+	<input type="text" placeholder="邮箱" required>
+        <input type="password" placeholder="密码" required>
+        <button type="submit">登录</button>
+    </form>
+</div>
+
+</body>
+</html>
